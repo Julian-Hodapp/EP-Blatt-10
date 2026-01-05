@@ -31,19 +31,20 @@ public class Spielstein {
 					currentRow--;
 				}
 				if(dir == 'D') {
-					currentRow--;
+					currentRow++;
 				}
 				if(dir == 'L') {
 					currentCol--;
 				}
 				if(dir == 'R') {
-					currentCol--;
+					currentCol++;
 				}
 			}
 			n--;
 		}
 	}
 	
+	//getters & setters
 	public int getCurrentRow() {
 		return currentRow;
 	}
