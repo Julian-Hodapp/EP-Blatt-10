@@ -12,6 +12,11 @@ public class P1_main {
 	}
 	
 	public static Betrag summe(Betrag a, Betrag b) {
-		return new Betrag(a.getEuro() + b.getEuro(), a.getCent() + b.getCent());
+		Betrag betrag = new Betrag(0,0);
+		
+		b.setEuro(a.getEuro() + b.getEuro());
+		b.setCent(a.getCent() + b.getCent());
+		
+		return betrag;
 	}
 }
