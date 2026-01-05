@@ -5,8 +5,8 @@ public class Feld {
 	private char direction;
 	
 	public Feld(boolean boese, char direction) {
-		setBoese(boese);
-		setDirection(direction);
+		this.boese = boese;
+		this.direction = direction;
 	}
 
 	public boolean isBoese() {

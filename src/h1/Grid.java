@@ -63,7 +63,7 @@ public class Grid {
 			computeNextGen();
 			
 			//figure out if the game has already ended
-			boolean everyCellDead = true;
+			/* boolean everyCellDead = true;
 			boolean noChanges = true;
 			
 			for (int r = 0; r < rows; r++) {
@@ -82,7 +82,7 @@ public class Grid {
 				if(!noChanges && !everyCellDead) break;
 			}
 			
-			if(everyCellDead || noChanges) break;
+			if(everyCellDead || noChanges) break; */
 		}
 	}
 
@@ -93,4 +93,15 @@ public class Grid {
 	public void setGridArray(Cell[][] gridArray) {
 		this.gridArray = gridArray;
 	}
+	
+//	 Hilfsmethode: Grid ausgeben
+	/* public static void printGrid(Grid grid) {
+	        Cell[][] g = grid.getGridArray();
+	        for (int i = 0; i < g.length; i++) {
+	            for (int j = 0; j < g[0].length; j++) {
+	                System.out.print(g[i][j].isAlive() ? "1 " : "0 ");
+	            }
+	            System.out.println();
+	        } 
+	  } */
 }

@@ -6,9 +6,9 @@ public class Spielstein {
 	private Spielbrett brett;
 	
 	public Spielstein(Spielbrett brett, int indexRow, int indexCol) {
-		setCurrentCol(indexCol);
-		setCurrentRow(indexRow);
-		setBrett(brett);
+		this.currentCol = indexCol;
+		this.currentRow = indexRow;
+		this.brett = brett;
 	}
 	
 	private boolean movesOut() {

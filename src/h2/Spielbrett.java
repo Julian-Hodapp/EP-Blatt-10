@@ -5,9 +5,9 @@ public class Spielbrett {
 	private int dim;
 	
 	public Spielbrett(int dim) {
-		setDim(dim);
+		this.dim = dim;
 		
-		setBrett(new Feld[dim][dim]);
+		this.brett = new Feld[dim][dim];
 	}
 	
 	
